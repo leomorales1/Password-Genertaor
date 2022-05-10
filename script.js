@@ -25,28 +25,28 @@ function generatePassword(){
   if(lowercaseconfirm === "yes"){
     userchoicearray = userchoicearray.concat(lowercase)
     console.log(userchoicearray)
+  }
     else{
       alert("you slected to not use lowercase charcter?")
     }
-  }
   // add else if the user says no to the prompt
   var numbersconfirm = prompt("would you like to add numbers letters?")
   if(numbersconfirm === "yes"){
     userchoicearray = userchoicearray.concat(numbers)
     console.log(userchoicearray)
+  }
     else{
       alert("you selected to not use numbers?")
     }
-  }
   // add else if the user says no to the prompt
   var specialcharconfirm = prompt("would you like to add specialchar letters?")
   if(specialcharconfirm === "yes"){
     userchoicearray = userchoicearray.concat(specialchar)
     console.log(userchoicearray)
+  }
     else{
       alert("you selected to not use special characters?")
     }
-  }
   // add else if the user says no to the prompt
   var result = ""
   for ( var i = 0; i < passwordlength; i++ ) {
